@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block headd %}
+<h1>This is a Home page Template</h1>
+<h1>{{ request.user }}</h1>
+<p>{{text}}</p>
+{{my_list}}
+
+<ul>
+
+{% for i in my_list  %}
+    <li>  {{forloop.counter}} -{{i}}</li>
+{% endfor %}
+    
+</ul>
+{% endblock headd %}
+    

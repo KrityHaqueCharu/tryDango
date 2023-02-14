@@ -1,0 +1,17 @@
+{% comment %} base.html is a convention {% endcomment %}
+
+<!doctype html>
+<html>
+<head>
+  <title>Trying Django</title>  
+</head>
+<body>
+    <h3>This is Navbar</h3>
+    {% include 'navbar.html' %}
+    {% block headd %}
+    replace
+    {% comment %} etar moddhe jeta thakbe, ei html file ke extend korle shetai pabe {% endcomment %}
+    {% endblock headd %}
+    
+</body>
+</html>     
